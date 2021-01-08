@@ -14,9 +14,12 @@ body {
     text-align: center;
     margin: auto;
 }
-
 img {
     width: 100%;
+}
+
+.profile {
+    margin: 12px 12px;
 }
 
 .container img {
@@ -38,7 +41,6 @@ img {
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: bold;
-    width: 100%;
 }
 
 .container a {
@@ -46,4 +48,132 @@ img {
     padding-top: 10px;
     padding-bottom: 10px;
     text-decoration: none;
+}
+
+ul.main-nav {
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 760px) {
+    .main-nav li {
+        display: inline-block;
+        background-color: lightgrey;
+        margin: 6px 20px;
+    }
+    .container {
+        background-color: lightgrey;
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+        width:90%;
+        overflow: hidden;
+    }
+    .container img {
+        width: 30%;
+    }
+    .profile {
+        float:right;
+    }
+    .first {
+        display: inline-block;
+        width: 45%;
+        float: left;
+    }
+    .second {
+        display: inline-block;
+        width: 45%;
+        float: right;
+    }
+    .third {
+        display: inline-block;
+        width: 45%;
+        float: left;
+    }
+    .fourth {
+        display: inline-block;
+        width: 45%;
+        float: right;
+    }
+    .fifth {
+        display: inline-block;
+        width: 45%;
+        float: left;
+    }
+    .sixth {
+        display: inline-block;
+        width: 45%;
+        float: right;
+    }
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-nav li,
+    .name,
+    .main-nav{
+        display: inline-block;
+        background-color: lightgrey;
+        margin: 6px 20px;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+    .container {
+        background-color: lightgrey;
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+        width: 90%;
+    }
+
+    .container img {
+        width: 30%;
+    }
+
+    .first {
+        display: inline-block;
+        width: 30%;
+        float: left;
+    }
+
+    .second {
+        display: inline-block;
+        width: 30%;
+        float: none;
+    }
+
+    .third {
+        display: inline-block;
+        width: 30%;
+        float: right;
+    }
+
+    .fourth {
+        display: inline-block;
+        width: 30%;
+        float: left;
+    }
+
+    .fifth {
+        display: inline-block;
+        width: 30%;
+        float: none;
+    }
+
+    .sixth {
+        display: inline-block;
+        width: 30%;
+        float: right;
+    }
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+ 
 }
