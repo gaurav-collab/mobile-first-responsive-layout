@@ -31,6 +31,15 @@ img {
     background-color: lightgrey;
     text-align: center;
     margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.container-bottom {
+    width: 90%;
+    background-color: lightgrey;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 20px;
 }
 
 .main-nav li {
@@ -55,6 +64,23 @@ ul.main-nav {
     margin: 0;
 }
 
+.bottom,
+.bottom li {
+    display: inline-block;
+}
+.bottom-name {
+    float: left;
+}
+
+.top-ref {
+    float: right;
+}
+
+.bottom-wrap {
+    margin: 20px 20px;
+    padding: 20px 20px;
+}
+
 @media (min-width: 760px) {
     .main-nav li {
         display: inline-block;
@@ -68,6 +94,7 @@ ul.main-nav {
         width:90%;
         overflow: hidden;
     }
+
     .container img {
         width: 30%;
     }
@@ -113,22 +140,24 @@ ul.main-nav {
 
 @media (min-width: 1024px) {
     .main-nav li,
-    .name,
-    .main-nav{
+    .name, 
+    .main-nav {
         display: inline-block;
         background-color: lightgrey;
-        margin: 6px 20px;
+        margin: 0 20px;
     }
-
     .main-nav {
+        margin-right: 0; 
         float: right;
     }
-
+    
     .container {
         background-color: lightgrey;
         margin-bottom: 50px;
         padding-bottom: 50px;
         width: 90%;
+        text-align: left;
+        padding: 20px 20px;
     }
 
     .container img {
@@ -170,10 +199,9 @@ ul.main-nav {
         width: 30%;
         float: right;
     }
-    .clearfix::after {
-        content: " ";
-        display: table;
-        clear: both;
+    .profile {
+        float: right;
+        margin-right: 20px;
     }
  
 }
