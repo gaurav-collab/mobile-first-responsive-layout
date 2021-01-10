@@ -7,17 +7,17 @@ body {
     font-family: 'Varela Round', sans-serif;
     line-height: 1.6;
     color: #3a3a3a;
-    max-width: 1600px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .main-body {
-    width: 80%;
     text-align: center;
     margin: auto;
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 
@@ -26,7 +26,6 @@ img {
 }
 
 .container {
-    width: 100%;
     background-color: lightgrey;
     text-align: center;
     margin: 0 auto;
@@ -35,7 +34,6 @@ img {
 
 
 .container a {
-    display: block;
     text-decoration: none;
 }
 
@@ -63,7 +61,6 @@ ul.main-nav {
 
 
 .bottom-wrap {
-    overflow: hidden;
     margin: auto;
 }
 
@@ -97,17 +94,8 @@ ul.main-nav {
         margin: 6px 20px;
     }
 
-    .main-body {
-        overflow: hidden;
-    }
     .container {
         background-color: lightgrey;
-        width:100%;
-        overflow: hidden;
-    }
-
-    .container img {
-        width: 30%;
     }
 
     p.para {
@@ -122,36 +110,24 @@ ul.main-nav {
         float:right;
     }
 
-    .first {
+    .portfolio {
         display: inline-block;
-        width: 45%;
-        float: left;
+        margin: 20px;
+        max-width: 44%;
     }
-    .second {
-        display: inline-block;
-        width: 45%;
-        float: right;
-    }
-    .third {
-        display: inline-block;
-        width: 45%;
-        float: left;
-    }
-    .fourth {
-        display: inline-block;
-        width: 45%;
-        float: right;
-    }
+
+    .first,
+    .third,
     .fifth {
-        display: inline-block;
-        width: 45%;
         float: left;
     }
+
+    .second,
+    .fourth,
     .sixth {
-        display: inline-block;
-        width: 45%;
         float: right;
     }
+    
 
     ul.bottom-nav {
         margin: 0;
@@ -164,7 +140,6 @@ ul.main-nav {
     }
 
     .bottom {
-        overflow: hidden;
         display: block;
     }
 
@@ -223,41 +198,24 @@ ul.main-nav {
         text-align: left;
     }
 
-    .first {
+    .portfolio {
         display: inline-block;
-        width: 30%;
-        float: left;
+        margin: 20px;
+        max-width: 44%;
     }
 
-    .second {
-        display: inline-block;
-        width: 30%;
-        float: none;
-    }
-
-    .third {
-        display: inline-block;
-        width: 30%;
-        float: right;
-    }
-
-    .fourth {
-        display: inline-block;
-        width: 30%;
-        float: left;
-    }
-
+    .first,
+    .third,
     .fifth {
-        display: inline-block;
-        width: 30%;
-        float: none;
+        float: left;
     }
 
+    .second,
+    .fourth,
     .sixth {
-        display: inline-block;
-        width: 30%;
         float: right;
     }
+
     .profile {
         float: right;
         margin-right: 20px;
@@ -284,15 +242,21 @@ ul.main-nav {
     .bot-name {
         float: left;
         list-style-type: none;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .bottom-nav a {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .bottom-wrap {
         display: none;
+    }
+
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
     }
  
 }
