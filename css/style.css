@@ -7,6 +7,7 @@ body {
     font-family: 'Varela Round', sans-serif;
     line-height: 1.6;
     color: #3a3a3a;
+    max-width: 1600px;
 }
 
 .main-body {
@@ -14,32 +15,28 @@ body {
     text-align: center;
     margin: auto;
 }
+
 img {
     width: 100%;
 }
+
 
 .profile {
     margin: 12px 12px;
 }
 
-.container img {
-    width: 70%;
-}
-
 .container {
-    width: 90%;
-    background-color: lightgrey;
-    text-align: center;
-    margin: 20px auto;
-    padding: 20px 20px;
-}
-
-.container-bottom {
-    width: 90%;
+    width: 100%;
     background-color: lightgrey;
     text-align: center;
     margin: 0 auto;
-    padding: 20px 20px;
+    padding: 20px;
+}
+
+
+.container a {
+    display: block;
+    text-decoration: none;
 }
 
 .main-nav li {
@@ -52,22 +49,28 @@ img {
     font-weight: bold;
 }
 
-.container a {
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-decoration: none;
-}
 
 ul.main-nav {
     padding: 0;
     margin: 0;
 }
 
-.bottom,
-.bottom li {
-    display: inline-block;
+.container-bottom {
+    text-align: center;
+    background-color: lightgrey;
+    padding: 30px;
 }
+
+
+.bottom-wrap {
+    overflow: hidden;
+    margin: auto;
+}
+
+.bottom-wrap a {
+    text-decoration: none;
+}
+
 .bottom-name {
     float: left;
 }
@@ -76,32 +79,49 @@ ul.main-nav {
     float: right;
 }
 
-.bottom-wrap {
-    margin: 20px 20px;
-    padding: 20px 20px;
+.bottom {
+    display: none;
 }
 
-@media (min-width: 760px) {
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+
+@media (min-width: 768px) {
     .main-nav li {
         display: inline-block;
         background-color: lightgrey;
         margin: 6px 20px;
     }
+
+    .main-body {
+        overflow: hidden;
+    }
     .container {
         background-color: lightgrey;
-        margin-bottom: 50px;
-        padding-bottom: 50px;
-        width:90%;
+        width:100%;
         overflow: hidden;
-        margin-top: 50px;
     }
 
     .container img {
         width: 30%;
     }
+
+    p.para {
+        min-height: 150px;
+    }
+
+    .intro {
+        text-align: left;
+    }
+
     .profile {
         float:right;
     }
+
     .first {
         display: inline-block;
         width: 45%;
@@ -132,6 +152,52 @@ ul.main-nav {
         width: 45%;
         float: right;
     }
+
+    ul.bottom-nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-bottom {
+        background-color: lightgrey;
+        display: block;
+    }
+
+    .bottom {
+        overflow: hidden;
+        display: block;
+    }
+
+    .bottom a {
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .bottom-nav li,
+    .bot-name,
+    .bottom-nav {
+        display: inline-block;
+        background-color: lightgrey;
+        margin: 0 20px;
+    }
+
+    .bottom-nav {
+        float: right;
+    }
+
+    .bot-name {
+        float: left;
+        list-style-type: none;
+        font-size: 20px;
+    }
+
+    .bottom-nav a {
+        font-size: 20px;
+    }
+    .bottom-wrap {
+        display: none;
+    }
+
     .clearfix::after {
         content: " ";
         display: table;
@@ -148,22 +214,13 @@ ul.main-nav {
         margin: 0 20px;
     }
     .main-nav {
-        margin-right: 0; 
         float: right;
     }
     
     .container {
         background-color: lightgrey;
-        margin-bottom: 50px;
-        padding-bottom: 50px;
-        width: 90%;
+        width: 100%;
         text-align: left;
-        padding: 20px 20px;
-        margin-top: 50px;
-    }
-
-    .container img {
-        width: 30%;
     }
 
     .first {
@@ -204,6 +261,38 @@ ul.main-nav {
     .profile {
         float: right;
         margin-right: 20px;
+    }
+    .container-bottom {
+        width: 100%;
+    }
+
+    .bottom {
+        display: block;
+    }
+
+    .bottom-nav li,
+    .bot-name,
+    .bottom-nav {
+        display: inline-block;
+        background-color: lightgrey;
+    }
+
+    .bottom-nav {
+        float: right;
+    }
+
+    .bot-name {
+        float: left;
+        list-style-type: none;
+        font-size: 30px;
+    }
+
+    .bottom-nav a {
+        font-size: 30px;
+    }
+
+    .bottom-wrap {
+        display: none;
     }
  
 }
